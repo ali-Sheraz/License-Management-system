@@ -1,0 +1,41 @@
+/* src/Applications/navbar/Footer.css */
+
+.footer {
+  background:linear-gradient(195deg, rgb(94, 98, 147),rgb(46, 48, 78)) !important; /* Dark background color */
+  color: #ffffff; /* Light text color */
+  text-align: center;
+  padding: 0.68em 0;
+  margin-top: auto;
+}
+
+.footer a {
+  color: #007bff; /* Blue accent color for links */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* fixed footer
+.footer {
+background: linear-gradient(195deg, rgb(46, 48, 78), rgb(94, 98, 147)) !important; 
+color: #ffffff; 
+text-align: center;
+padding: 1em 0;
+margin-top: auto;
+position: fixed; 
+bottom: 0;
+width: 100%;
+}
+
+.footer a {
+color: #007bff; 
+text-decoration: none;
+}
+
+.footer a:hover {
+text-decoration: underline;
+} */

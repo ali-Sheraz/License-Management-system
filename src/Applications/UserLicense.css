@@ -1,0 +1,169 @@
+UserLicense.css
+.user-subscription-container {
+  margin: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.user-subscription-table {
+  width: 80%; /* Decreased width */
+  margin: 0 auto; /* Center the table */
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-subscription-table th, .user-license-table td {
+  border: 1px solid #ddd;
+  padding: 8px 10px; /* Adjusted padding for smaller cells */
+  text-align: left;
+  font-size: 12px; /* Decreased font size */
+}
+
+.user-subscription-table th {
+  background-color: #6c757d;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 6px 8px; /* Decreased padding for header */
+  font-size: 10px; /* Decreased font size for header */
+}
+
+.user-subscription-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-subscription-table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.user-subscription-table th,
+.user-subscription-table td {
+  transition: all 0.3s ease;
+}
+
+.pagination {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 5px 10px; /* Adjusted the padding to make the button smaller */
+  margin: 0 5px;
+  border-radius: 5px;
+  font-size: 12px; /* Decreased font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #5a6268;
+  transform: scale(1.05);
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.user-subscription-table tbody tr .expired-end-date {
+  display: inline;
+  padding: 0.55em 0.9em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background:linear-gradient(295deg,rgb(139, 0, 0), rgb(255, 99, 71));
+  color: rgb(255, 255, 255);
+  border-radius: 0.375rem;
+  text-align: center;
+  transform: none;
+  white-space: nowrap;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust the height as needed */
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: rgb(195, 193, 193);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Skeleton Loader Styles */
+.skeleton-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skeleton-container .skeleton-row {
+  display: flex;
+}
+
+.skeleton-container .skeleton-row div {
+  flex: 1;
+  padding: 8px 10px; /* Adjusted padding for smaller cells */
+}
+
+.skeleton-container .skeleton-row .skeleton-cell {
+  border: 1px solid #ddd;
+}
+
+.skeleton-header th {
+  background-color: #6c757d;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 6px 8px; /* Decreased padding for header */
+  font-size: 10px; /* Decreased font size for header */
+}
+.user-subscription-table tbody tr .date-cell {
+  display: inline;
+  padding: 0.55em 0.9em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71));
+  color: rgb(255, 255, 255);
+  border-radius: 0.375rem;
+  text-align: center;
+  transform: none;
+  white-space: nowrap;
+}

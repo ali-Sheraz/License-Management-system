@@ -1,0 +1,47 @@
+/* src/Applications/navbar/themes.css */
+
+/* Light Theme */
+body.light {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --navbar-background: linear-gradient(195deg, rgb(46, 48, 78), rgb(94, 98, 147));
+    --navbar-item-hover: #333333;
+    --navbar-item-active: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
+    --footer-background: linear-gradient(195deg, rgb(94, 98, 147), rgb(46, 48, 78));
+  }
+  
+  /* Dark Theme */
+  body.dark {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --navbar-background: linear-gradient(195deg, rgb(34, 36, 48), rgb(54, 58, 77));
+    --navbar-item-hover: #555555;
+    --navbar-item-active: linear-gradient(195deg, rgb(93, 173, 241), rgb(46, 135, 232));
+    --footer-background: linear-gradient(195deg, rgb(54, 58, 77), rgb(34, 36, 48));
+  }
+  
+  /* Common Styles */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .navbar {
+    background: var(--navbar-background) !important;
+  }
+  
+  .ui.menu .item:hover {
+    background-color: var(--navbar-item-hover);
+    color: var(--text-color);
+  }
+  
+  .ui.menu .active.item {
+    background: var(--navbar-item-active) !important;
+    color: var(--text-color) !important;
+  }
+  
+  .footer {
+    background: var(--footer-background) !important;
+    color: var(--text-color);
+  }
+  

@@ -1,0 +1,218 @@
+/* 
+
+.navbar {
+  background: linear-gradient(195deg, rgb(46, 48, 78), rgb(94, 98, 147)) !important;
+  padding: 0.5rem 0;
+  height: auto;
+}
+
+.navbar .ui.menu {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.navbar .ui.menu .item {
+  color: #ffffff; 
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .ui.menu .item:hover {
+  background-color: #333333; 
+  color: #ffffff;
+}
+
+.navbar .ui.menu .item.active {
+  background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232)) !important; 
+  border-bottom: none;
+  color: #ffffff;
+}
+
+
+.company-name {
+  font-size: 1.5rem; 
+  font-weight: bold;
+  color: #1e90ff; 
+} */
+
+.navbar {
+  background: linear-gradient(195deg, rgb(46, 48, 78), rgb(94, 98, 147)) !important; 
+  padding: 0.5rem 0;
+  height: auto; 
+  position: fixed;
+  top: 60px; 
+  width: 100%;
+  z-index: 1000;
+}
+
+.ui.menu {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  
+}
+
+.ui.menu .item {
+  color: #ffffff; 
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.ui.menu .item:hover {
+  background-color: #863f3f;
+  color: #ffffff;
+  border-radius: 0.375rem;
+}
+
+.ui.menu .active.item {
+  background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232)) !important; 
+  border-bottom: none !important; 
+  color: #ffffff !important;
+  border-radius: 0.375rem;
+}
+
+
+
+.close-icon-container {
+  padding: 24px 32px 8px;
+  text-align: center;
+  opacity: 1;
+  background: transparent;
+  color: darkgray;
+  box-shadow: none;
+}
+
+.close-icon-check {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 13px;
+  opacity: 1;
+  background: transparent;
+  color: rgb(52, 71, 103);
+  box-shadow: none;
+  cursor: pointer;
+}
+
+@media (min-width: 0px) {
+  .close-icon-check {
+    display: block;
+  }
+}
+
+.css-i4qfl5 {
+  margin: 0px;
+  font-size: 1rem;
+  line-height: 1.625;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.0075em;
+  opacity: 1;
+  text-transform: none;
+  vertical-align: unset;
+  text-decoration: none;
+  color: rgb(123, 128, 154);
+}
+
+.css-kyh2wa {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+
+  display: inline-block;
+  text-align: center;
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: inherit !important;
+}
+
+.css-cz6ae8 {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  opacity: 1;
+  background: transparent;
+  color: rgb(52, 71, 103);
+  box-shadow: none;
+  
+}
+
+.css-189bj80 {
+  width: 10rem;
+  padding-left: 8px;
+  padding-right: 8px;
+  opacity: 1;
+  background: transparent;
+  color: rgb(52, 71, 103);
+  box-shadow: none;
+}
+
+.css-6vm7vh {
+  flex-shrink: 0;
+  border-top: 0px solid rgba(0, 0, 0, 0.08);
+  border-right: 0px solid rgba(0, 0, 0, 0.08);
+  border-left: 0px solid rgba(0, 0, 0, 0.08);
+  height: 0.0625rem;
+  margin: 1rem 0px;
+  border-bottom: none;
+  opacity: 0.25;
+  background-color: transparent;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(255, 255, 255, 0)) !important;
+}
+
+/* Style for desktop view */
+.desktop-navbar {
+  display: block;
+}
+.mobile-user-menu {
+  display: none;
+  
+}
+.ui.icon.button{
+  display: none;
+}
+
+/* Mobile navbar styles */
+@media screen and (max-width: 968px) {
+  .mobile-navbar {
+    display: block;
+    z-index: 1000;
+
+  }
+
+  .desktop-navbar {
+    display: none;
+  }
+
+  .ui.icon.button {
+    display: block !important;
+    position: fixed;
+    width: 100%;
+    top: 73px;
+    /* z-index: 1001; Ensure it is above the sidebar */
+  }
+
+  .mobile-user-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 110px;
+    width: 100%; /* Ensures the popup is centered */
+  }
+
+  .ui.inverted.menu .item {
+    margin: 0.5rem 1rem; /* Adjust margin as needed */
+    padding: 1rem; /* Adjust padding as needed */
+    }
+  .ui.inverted.menu .active.item {
+    background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232)) !important;
+    border-bottom: none !important;
+    color: #ffffff !important;
+    border-radius: 0.375rem !important; /* Ensure !important is used if needed */
+  }
+}
+
+
+

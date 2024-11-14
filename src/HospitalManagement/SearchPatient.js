@@ -23,6 +23,7 @@ const SearchPatient = () => {
     return axios.get(USER_REST_API_URL, { params: criteria })
       .then(response => {
         setPatients(response.data);
+        console.log(response.data)
       })
       .catch(error => {
         console.error('Error fetching data:', error);

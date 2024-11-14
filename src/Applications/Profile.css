@@ -1,0 +1,176 @@
+/* Profile.css */
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    animation: fadeInBackground 1s ease-in-out;
+  }
+  
+  .profile-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    animation: slideIn 4s linear infinite;
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #f1f1f1;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-picture img:hover {
+    transform: scale(1.1);
+  }
+  
+  .profile-details {
+    padding: 20px;
+  }
+  
+  .profile-details h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .profile-details p {
+    color: #777;
+    margin: 10px 0;
+  }
+  
+  .profile-details h2:hover {
+    color: #5c5c9f;
+  }
+  
+  @keyframes fadeInBackground {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-5px, -5px);
+    }
+    50% {
+      transform: translate(5px, 5px);
+    }
+    75% {
+      transform: translate(-5px, 5px);
+    }
+  }
+  
+  /* Skeleton Loader Styles */
+  .skeleton {
+    background-color: #ddd;
+    border-radius: 4px;
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .skeleton::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shimmer 1.5s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .skeleton-picture {
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  .skeleton-text {
+    height: 20px;
+    width: 80%;
+    margin: 10px auto;
+  }
+  
+  .skeleton-name {
+    width: 60%;
+  }
+  
+  .skeleton-email,
+  .skeleton-location,
+  .skeleton-bio {
+    width: 80%;
+  }
+ 
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(25% - 20px); /* Ensure cards take up equal space */
+    text-align: center;
+    min-width: 150px; /* Ensure minimum width for each card */
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+  
+  .card p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: grey;
+  }
+  
+  .card .icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .card {
+      flex: 0 0 calc(50% - 20px); /* Each card takes up almost half the container width */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 0 0 calc(100% - 20px); /* Each card takes up full container width */
+    }
+  }
+  

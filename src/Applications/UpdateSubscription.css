@@ -1,0 +1,78 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .update-subscription-form {
+    max-width: 100%;
+  }
+  
+  .select-label {
+    font-weight: bold;
+  }
+  
+  .subscription-select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  
+  .file-label {
+    font-weight: bold;
+  }
+  
+  .form-control-file {
+    margin-top: 8px;
+  }
+  
+  .submit-button {
+    margin-top: 16px;
+  }
+  .alert {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    margin-top: 20px;
+  }
+  
+  .alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+  
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+  
+  /* Optional: Customize alert styles further */
+  .alert p {
+    margin: 0;
+  }
+  
+  .alert-success p {
+    font-weight: bold;
+  }
+  
+  .alert-danger p {
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,28 @@
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+  flex: 1;
+  padding-top: 100px;
+  padding-bottom: 2rem; 
+  margin-top:2rem;
+}
+  .logo-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 0; 
+  background-color: #f8f9fa; 
+  z-index: 1000; 
+}
+
+.logo {
+  width: 150px; 
+}
